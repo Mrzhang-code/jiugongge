@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结束页</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*固定头部*/
+        header{
+            text-align: center;
+            width: 100%;
+            height: 50px;
+            background-color: rgb( 41,189,226);
+            line-height: 60px;
+            color: white;
+            font-size: large;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            top: 0;
+            z-index: 3;
+        }
+        .icon4{
+            width: 21px;
+            height: 21px;
+            background-image: url(IT-7-JSY.png);
+            background-size: 185.5px 164.5px;
+            background-position: -93px -117.5px;
+            border: none;
+            background-color: rgb( 41,189,226);
+            margin-top: 20px;
+            margin-right: 3%;
+        }
+        .icon3{
+            width: 25.5px;
+            height: 21px;
+            background-image: url(IT-7-JSY.png);
+            background-size: 185.5px 164.5px;
+            background-position: -57.5px -117.5px;
+            border: none;
+            background-color: rgb( 41,189,226);
+            margin-top: 18px;
+            margin-left: 3%;
+        }
+        /*内容*/
+        .icon1{
+            width: 42.5px;
+            height: 42px;
+            background-image: url(IT-7-JSY.png);
+            background-size: 185.5px 164.5px;
+            background-position: -5px -117.5px;
+            position: absolute;
+            top: 17px;
+            left: 50%;
+            transform: translate(-50%,17px);
+        }
+        .icon2{
+            width: 175.5px;
+            height: 102.5px;
+            background-image: url(IT-7-JSY.png);
+            background-size: 185.5px 164.5px;
+            background-position: -5px -5px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%,10px);
+        }
+        .w{
+            color: white;
+            font-size: large;
+            text-align: center;
+            position: absolute;
+            top: 45px;
+            left: 50%;
+            transform: translate(-50%,45px);
+            z-index: 2;
+            
+        }/*用绝对定位将三个div重合在一起*/
+        .main-top{
+            margin-top: 50px;
+            position: relative;
+            background-color: rgb(41,189,224);
+            border-top: 1px solid rgb(221,221,221);
+        }
+        .p1{
+            color: rgb(255,200,101);
+            font-size: large;
+            padding: 130px 10% 40px 10%;
+        }
+        .p2{
+            color: white;
+            font-size: medium;
+            padding: 0 10%;
+        }
+        .p3{
+            color: white;
+            font-size: medium;
+            padding: 0 10% 10px 10%;
+        }
+        .main-foot{
+            padding: 0 10% 10px 10%;
+            color: rgb(166,166,166);
+            border-top: 1px solid rgb(221,221,221);
+            
+        }
+        .p-top{
+            display: inline-block;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .span-time{
+            color: rgb(81,81,81);
+            font-size: large;
+            left: 0;
+        }
+        .span-right{
+            font-size: smaller;
+            right: 0;
+        }
+        /*固定底部按钮*/
+        footer{
+            position: fixed;
+            bottom: 0;
+            height: 60px;
+            width: 100%;
+            background-color: rgb(41,189,226, 0.7);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .btn1{
+            width: 44%;
+            height: 40px;
+            margin-left: 3%;
+            border: none;
+            background-color: rgb(246,111,111);
+            border-radius: 5px;
+            color: white;
+            font-size: large;
+        }
+        .btn2{
+            width: 44%;
+            height: 40px;
+            margin-right: 3%;
+            border: none;
+            background-color: rgb(251,180,53);
+            border-radius: 5px;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <!--固定头部-->
+    <header>
+        <button class="icon3"></button>游戏结果<button class="icon4"></button>
+    </header>
+    <!--内容-->
+    <main>
+        <div class="main-top">
+            <div class="icon1"></div>
+            <div class="icon2"></div>
+            <div class="w">卧底胜利</div>
+            <p class="p1">太棒了!你知道么？在捉鬼游戏中 只有20%的卧底取得游戏最终的胜利哦！</p>
+            <p class="p2">杀&nbsp;手0人&nbsp;&nbsp;&nbsp;&nbsp;警&nbsp;察1人&nbsp;&nbsp;&nbsp;&nbsp;平&nbsp;民6人  </p>
+            <p class="p2">狙击手0人 &nbsp;&nbsp;&nbsp;&nbsp; 医&nbsp;生1人  </p>
+            <p class="p2">卧底词汇：爱新觉罗   </p>
+            <p class="p3">水民词汇：努尔哈赤 </p>
+        </div>
+        <div class="main-foot"><p class="p-top"><span class="span-time">第一天</span> <span class="span-right">0小时07分</span></p>
+            <p>晚上：5号被杀手杀死，5号是水民 <br/>  白天：8号被全民投票投死，8号是杀手</p>
+        </div>
+        <div class="main-foot"><p class="p-top"><span class="span-time">第二天</span> <span class="span-right">0小时07分</span></p>
+            <p>晚上：5号被杀手杀死，5号是水民 <br/>  白天：8号被全民投票投死，8号是杀手</p>
+        </div>
+        <div class="main-foot"><p class="p-top"><span class="span-time">第三天</span> <span class="span-right">0小时07分</span></p>
+            <p>晚上：5号被杀手杀死，5号是水民 <br/>  白天：8号被全民投票投死，8号是杀手</p>
+        </div>
+    </main>
+    <!--固定底部按钮-->
+    <footer>
+        <button class="btn1">再来一局</button>
+        <button class="btn2">上传并分享</button>
+    </footer>
+</body>
+</html>
